@@ -25,16 +25,16 @@
 
                         <gauge:SfLinearGauge.MarkerPointers>
                             <gauge:LinearContentPointer
-                                x:Name="HeightPointer"
+                                x:Name="heightPointer"
                                 IsInteractive="True"
                                 Position="Cross"
-                                Value="{Binding IMC.Altura}">
+                                Value="{Binding persona.altura}">
                                 <gauge:LinearContentPointer.Content>
                                     <Grid HeightRequest="25" WidthRequest="50">
                                         <RoundRectangle CornerRadius="5" Fill="#ff0074E3" />
                                         <Label
                                             HorizontalOptions="Center"
-                                            Text="{Binding Source={x:Reference HeightPointer}, Path=Value,
+                                            Text="{Binding Source={x:Reference heightPointer}, Path=Value,
                                             StringFormat='{0:0}'}"
                                             TextColor="White"
                                             VerticalOptions="Center" />
@@ -60,7 +60,7 @@
 
                         <gauge:SfLinearGauge.MarkerPointers>
                             <gauge:LinearContentPointer
-                                x:Name="WeightPointer"
+                                x:Name="weightPointer"
                                 IsInteractive="True"
                                 Position="Cross"
                                 Value="{Binding IMC.Altura}">
@@ -69,7 +69,7 @@
                                         <RoundRectangle CornerRadius="5" Fill="#ff0074E3" />
                                         <Label
                                             HorizontalOptions="Center"
-                                            Text="{Binding Source={x:Reference WeightPointer}, Path=Value,
+                                            Text="{Binding Source={x:Reference weightPointer}, Path=Value,
                                             StringFormat='{0:0}'}"
                                             TextColor="White"
                                             VerticalOptions="Center" />
@@ -84,7 +84,8 @@
             <Frame
                 BackgroundColor="White">
                 <VerticalStackLayout>
-                    <gauge:SfRadialGauge Margin="0,-55,0,-55">                        <gauge:SfRadialGauge.Axes>
+                    <gauge:SfRadialGauge Margin="0,-55,0,-55">
+                        <gauge:SfRadialGauge.Axes>
                             <gauge:RadialAxis
                                 Maximum="50"
                                 Minimum="0"
@@ -108,7 +109,63 @@
                                         StartValue="16"
                                         StartWidth="0.65"
                                         WidthUnit="Factor">
-                                    </gauge:RadialRange>                                </gauge:RadialAxis.Ranges>
+                                    </gauge:RadialRange>
+
+                                    <gauge:RadialRange
+                                        EndValue="18.5"
+                                        EndWidth="0.65"
+                                        Fill="#418B45"
+                                        StartValue="17"
+                                        StartWidth="0.65"
+                                        WidthUnit="Factor">
+                                    </gauge:RadialRange>
+
+                                    <gauge:RadialRange
+                                        EndValue="25"
+                                        EndWidth="0.65"
+                                        Fill="#A9DF51"
+                                        StartValue="18.5"
+                                        StartWidth="0.65"
+                                        WidthUnit="Factor">
+                                    </gauge:RadialRange>
+
+                                    <gauge:RadialRange
+                                        EndValue="30"
+                                        EndWidth="0.65"
+                                        Fill="#F68F30"
+                                        StartValue="25"
+                                        StartWidth="0.65"
+                                        WidthUnit="Factor">
+                                    </gauge:RadialRange>
+
+                                    <gauge:RadialRange
+                                        EndValue="35"
+                                        EndWidth="0.65"
+                                        Fill="#D35E5B"
+                                        StartValue="30"
+                                        StartWidth="0.65"
+                                        WidthUnit="Factor">
+                                    </gauge:RadialRange>
+
+                                    <gauge:RadialRange
+                                        EndValue="40"
+                                        EndWidth="0.65"
+                                        Fill="#C21913"
+                                        StartValue="35"
+                                        StartWidth="0.65"
+                                        WidthUnit="Factor">
+                                    </gauge:RadialRange>
+
+                                    <gauge:RadialRange
+                                        EndValue="60"
+                                        EndWidth="0.65"
+                                        Fill="#690B08"
+                                        StartValue="40"
+                                        StartWidth="0.65"
+                                        WidthUnit="Factor">
+                                    </gauge:RadialRange>
+                                    
+                                </gauge:RadialAxis.Ranges>
                                 <gauge:RadialAxis.Pointers>
                                     <gauge:NeedlePointer
                                         x:Name="pointer"

@@ -2,11 +2,14 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+
 
 	public MainPage()
 	{
 		InitializeComponent();
+
+		heightPointer.Value = 25;
+		weightPointer.Value = 50;
 	}
 }
 
