@@ -56,14 +56,15 @@
                         Margin= "0,15,0,0"
                         Interval= "5"
                         Maximum= "150"
-                        Minimum= "50">
+                        Minimum= "50"
+                        >
 
                         <gauge:SfLinearGauge.MarkerPointers>
                             <gauge:LinearContentPointer
                                 x:Name="weightPointer"
                                 IsInteractive="True"
                                 Position="Cross"
-                                Value="{Binding IMC.Altura}">
+                                Value="{Binding persona.peso}">
                                 <gauge:LinearContentPointer.Content>
                                     <Grid HeightRequest="25" WidthRequest="50">
                                         <RoundRectangle CornerRadius="5" Fill="#ff0074E3" />

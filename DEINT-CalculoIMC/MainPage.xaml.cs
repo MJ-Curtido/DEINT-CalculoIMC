@@ -1,4 +1,6 @@
-﻿namespace DEINT_CalculoIMC;
+﻿using DEINT_CalculoIMC.MVVM.ViewModels;
+
+namespace DEINT_CalculoIMC;
 
 public partial class MainPage : ContentPage
 {
@@ -8,8 +10,7 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 
-		heightPointer.Value = 25;
-		weightPointer.Value = 50;
+		BindingContext = new PersonaViewModel();
 	}
 }
 
