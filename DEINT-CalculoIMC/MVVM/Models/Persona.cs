@@ -12,6 +12,7 @@ namespace DEINT_MVVMDemo.MVVM.Models
     {
         public int altura { get; set; }
         public int peso { get; set; }
+        public float imc { get; set; }
 
         public Persona()
         {

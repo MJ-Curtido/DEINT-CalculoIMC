@@ -175,7 +175,7 @@
                                         NeedleEndWidth="15"
                                         NeedleLength="0.6"
                                         NeedleStartWidth="2"
-                                        Value="{Binding IMC.Resultado}"/>
+                                        Value="{Binding persona.imc}"/>
                                 </gauge:RadialAxis.Pointers>
                             </gauge:RadialAxis>
                         </gauge:SfRadialGauge.Axes>
