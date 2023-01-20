@@ -90,9 +90,9 @@
             <Frame
                 BackgroundColor="White">
 
-                <VerticalStackLayout>
-                    <Label x:Name="lblIMC" Text="{Binding persona.imc, Converter={StaticResource basculeConverter}}"/>
-                    
+                <VerticalStackLayout Spacing="20">
+                    <Label x:Name="lblIMC" Text="{Binding persona.imc, Converter={StaticResource basculeConverter}}" TextColor="HotPink" HorizontalOptions="Center"/>
+
                     <gauge:SfRadialGauge Margin="0,-55,0,-55">
                         <gauge:SfRadialGauge.Axes>
                             <gauge:RadialAxis
