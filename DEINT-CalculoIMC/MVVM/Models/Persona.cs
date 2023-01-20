@@ -12,7 +12,13 @@ namespace DEINT_MVVMDemo.MVVM.Models
     {
         public int altura { get; set; }
         public int peso { get; set; }
-        public float imc { get; set; }
+        public float imc
+        {
+            get
+            {
+                return peso / (float) (Math.Pow(((double) altura / 100.0), 2));
+            }
+        }
 
         public Persona()
         {

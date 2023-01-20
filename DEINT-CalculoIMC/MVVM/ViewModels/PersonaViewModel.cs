@@ -15,8 +15,7 @@ namespace DEINT_CalculoIMC.MVVM.ViewModels
             persona = new Persona()
             {
                 altura = 25,
-                peso = 50,
-                imc = 800
+                peso = 50
             };
         }
     }
